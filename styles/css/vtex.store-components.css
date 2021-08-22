@@ -1,0 +1,122 @@
+.menuBar {
+  background: #111;
+}
+.searchBarContainer {
+  border: none;
+  width: 600px;
+  background-color: transparent;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid white;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group):focus {
+  border-bottom: 2px solid #59ff00;
+}
+
+.searchBarContainer :global(.vtex-input__suffix) {
+  background-color: transparent;
+  padding: 10px 0;
+}
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+  background-color: transparent;
+  border: none !important;
+  font-weight: bold;
+  color: white;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input):focus {
+  border-bottom: 2px solid #59ff00;
+}
+
+.searchBarIcon :global(.vtex-store-components-3-x-searchIcon) {
+  display: none;
+}
+
+.searchBarIcon::after {
+  content: "";
+  border: solid white;
+  border-width: 0px 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.searchBarIcon :global(.vtex-store-components-3-x-closeIcon) {
+  display: none;
+}
+
+/* .nameContainer {
+  color: white;
+}
+
+.buyButtonContainer {
+  color: #111;
+}
+.buyButton {
+  color: #111;
+  background-color: #59ff00;
+} */
+
+.buyButtonText {
+  color: #111;
+}
+
+.productNameContainer {
+  color: white;
+}
+
+.brandName {
+  color: white;
+}
+
+.swiper-pagination {
+  margin-top: 40px;
+}
+
+.carouselGaleryThumbs {
+  height: 0;
+  width: 0;
+  display: none;
+}
+.swiper-pagination {
+  position: absolute;
+  bottom: -80px;
+}
+.sellingPrice {
+  color: #59ff00;
+}
+
+.caretIcon {
+  color: white;
+}
+
+.swiperBullet--active {
+  background-color: #59ff00;
+}
+
+.shippingContainer :global(.vtex-input__label) {
+  color: white;
+}
+
+.shippingContainer :global(.vtex-address-form__postalCode-forgottenURL) {
+  color: #59ff00;
+}
+
+.shippingZipcodeLabel {
+  color: #59ff00;
+}
+
+.shippingInputLoader {
+  color: #fff;
+}
+
+.shippingContainer :global(.vtex-button) {
+  color: white;
+  border: none;
+  background: none;
+}

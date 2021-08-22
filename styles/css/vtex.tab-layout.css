@@ -1,0 +1,31 @@
+.container {
+  background-color: #212121;
+  box-shadow: 0 4px 6px 0px rgba(1, 1, 1, 0.4);
+}
+
+.listContainer {
+  justify-content: flex-start;
+}
+
+.listItem :global(.vtex-button) {
+  background-color: transparent;
+  color: #f9f9f9;
+  font-weight: bold !important;
+}
+
+.listItemActive :global(.vtex-button) {
+  color: #59ff00;
+}
+
+.contentItem {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+}
+
+.listItemActive {
+  background-color: transparent;
+  color: white;
+  font-weight: bold;
+  border-bottom: 2px solid #59ff00;
+}

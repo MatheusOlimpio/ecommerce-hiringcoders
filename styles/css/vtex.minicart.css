@@ -1,0 +1,8 @@
+.minicartTitle {
+  color: #fff;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  color: #454545;
+  font-weight: bold;
+}

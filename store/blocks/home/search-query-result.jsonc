@@ -1,0 +1,188 @@
+// Search Query Result - Bloco que renderiza produtos de acordo com a Tab Layout ativa
+{
+  "search-result-layout.customQuery#promocoes": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "CORINTHIANS",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home",
+      "search-result-layout.mobile#home",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#corinthians": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "CORINTHIANS",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home",
+      "search-result-layout.mobile",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#palmeiras": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "PALMEIRAS",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home",
+      "search-result-layout.mobile#home",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#signos": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "SIGNOS",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home",
+      "search-result-layout.mobile#home",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#divertidos": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "DIVERTIDOS",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home",
+      "search-result-layout.mobile#home",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#setemaravilhas": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "7 MARAVILHAS",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home",
+      "search-result-layout.mobile#home",
+      "search-not-found-layout"
+    ]
+  },
+  "search-result-layout.customQuery#guerreiros": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 8,
+        "queryField": "GUERREIROS",
+        "mapField": "ft"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#home",
+      "search-result-layout.mobile#home",
+      "search-not-found-layout"
+    ]
+  },
+  // Lista de produtos
+  "search-result-layout.desktop#home": {
+    "children": [
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true
+    }
+  },
+  "flex-layout.row#results": { 
+    "children": [ 
+      "flex-layout.col#search"
+    ]
+  },
+  "flex-layout.col#search": { 
+    "children": [
+      "search-content"
+    ]
+  },
+  "search-content": { 
+    "blocks": ["gallery", "not-found"]
+  },
+  "search-result-layout.mobile#home": {
+    "children": [
+      "flex-layout.row#results",
+      "search-fetch-more"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "preventRouteChange": true
+    }
+  },
+  "gallery": {
+    "props": {
+      "layouts": [
+        {
+          "name": "whole",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 2
+        }
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf#home"
+    },
+    "blocks": ["product-summary.shelf#home"]
+  },
+  "product-summary.shelf#home": {
+    "children": [
+      "product-summary-name",
+      "product-images#home",
+      "flex-layout.row#product-footer"
+    ]
+  },
+  "product-images#home": {
+    "props": {
+      "showNavigationArrows":true,
+      "showPaginationDots": true,
+      "thumbnailsOrientation": "horizontal"
+    }
+  },
+  "flex-layout.row#product-footer": {
+    "children": [
+      "product-summary-price",
+      "product-summary-buy-button"
+    ]
+  },
+  "product-summary-price": {
+    "props": {
+      "showListPrice": false,
+      "showInstallments": false
+    }
+  }
+}

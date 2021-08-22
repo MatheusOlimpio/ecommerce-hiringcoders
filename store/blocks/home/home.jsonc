@@ -1,0 +1,17 @@
+// Home - Página principal do ecommerce
+{
+  "store.home": {
+    "blocks": [
+      "flex-layout.row#principal"
+    ]
+  },
+  "flex-layout.row#principal": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": ["flex-layout.col#main"]
+  },
+  "flex-layout.col#main": {
+    "children": ["tab-layout#home"]
+  }
+}

@@ -1,0 +1,30 @@
+// Slider Home - Slider que exibe banner na pagina principal
+{
+  "list-context.image-list#banner": {
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 400,
+      "width": 200,
+      "images": [
+        {
+          "image": "assets/slider/image-grandes-guerreiros.png"
+        },
+        {
+          "image": "assets/slider/image-promo-upmedal.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "carousel"
+    }
+  }
+}
